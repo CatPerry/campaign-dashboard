@@ -1,0 +1,60 @@
+main.main-card {
+	margin: 30px 0 40px 0;
+	border: 1px solid rgb(187, 187, 187);
+	padding: 30px;
+	position: relative;
+	height: 350px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: 'stats image';
+	border-radius: 2px;
+	column-gap: 10px;
+	background-color: white;
+}
+
+.stats-container {
+	grid-area: stats;
+}
+
+.image-container {
+	grid-area: image;
+}
+
+img {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+}
+
+.card-title,
+.stats-number {
+	color: rgb(182, 182, 182);
+}
+
+.stats-line {
+	border-bottom: rgb(160, 179, 191) solid 1px;
+	padding-bottom: 9px;
+}
+
+@media (max-width: 1024px) {
+	main.main-card {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1 auto;
+		grid-template-areas:
+			'stats'
+			'image';
+		height: 100%;
+	}
+	.stats-container {
+		min-height: 50px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+
+	img {
+		height: 300px;
+		position: relative;
+	}
+}

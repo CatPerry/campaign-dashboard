@@ -1,0 +1,54 @@
+.dashboard {
+	min-height: 100vh;
+	width: 100vw;
+	background-color: rgb(240, 246, 250);
+	padding: 35px 35px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: 'nav campaigns';
+	justify-content: space-between;
+	column-gap: 30px;
+}
+
+.dashboard-nav {
+	grid-area: nav;
+	height: 100%;
+	background-color: rgb(176, 183, 187);
+	color: white;
+	border-radius: 5px;
+}
+
+.dashboard-nav-links {
+	background-color: white;
+	padding: 14px 15px 20px 15px;
+	margin-bottom: 45px;
+}
+
+.dashboard li {
+	list-style-type: none;
+	font-size: 1.1em;
+	font-weight: 100;
+	line-height: 42px;
+	margin-left: 0;
+	padding: 0 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.1rem;
+}
+
+.dashboard li:hover {
+	background-color: #aacbe0;
+	border-radius: 2px;
+}
+
+.dashboard a {
+	border-bottom: rgb(160, 179, 191) solid 1px;
+	padding-bottom: 9px;
+}
+
+.dashboard a:hover {
+	color: white;
+}
+
+.dashboard-header {
+	padding: 20px 0 0 28px;
+}

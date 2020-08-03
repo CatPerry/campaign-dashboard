@@ -1,0 +1,40 @@
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-grow: 1;
+	height: 14vh;
+	background-color: #ffffff;
+	margin: 0;
+}
+
+nav Link,
+nav a {
+	font-size: 0.9em;
+	padding: 0 25px 0 0;
+	border-right: #ffffff solid 1px;
+	color: rgb(85, 88, 91);
+}
+
+nav a Link:hover {
+	color: rgb(213, 211, 211);
+}
+
+li.header-nav {
+	margin-right: 30px;
+	list-style-type: none;
+	align-self: center;
+	color: white !important;
+	font-size: 1.3em;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 2em;
+	font-variant: small-caps;
+	color: rgb(85, 88, 91);
+}
+
+.home {
+	padding: 30px;
+}
